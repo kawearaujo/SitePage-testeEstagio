@@ -1,9 +1,10 @@
-window.load=slide(1);
+
 
 var bgnumber=1;
-
-function slide(n){
-    var maxbg =6;
-    document.getElementById('imagebg').style.backgroundImage= "url('../img/1.jpg');"
-    
-}
+var doc=document.getElementsByClassName('imagebg')
+console.log(doc.attributes)
+// function slide(n) {
+//      var maxbg =6;
+//      doc.= "img/1.jpg";
+//      // doc.style.backgroundImage= "url:('/img/"+n+".jpg');";   
+//  }
