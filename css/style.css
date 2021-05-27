@@ -3,8 +3,10 @@
     border: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 body{
+    
     background-color:rgb(65, 62, 62);
     
 }
@@ -15,7 +17,6 @@ body{
     width: 40px;
     height: 40px;
     margin-top: 10px;
-    transition: 1s;
 }
 .principal .frame1 a:active{
     scroll-behavior: smooth;
@@ -29,14 +30,15 @@ body{
     padding-top:60vh;
 }
 .principal .frame1 ul li{
-    background: rgb(194, 117, 45);
+    background: rgba(0, 0, 0, 0.7);
     width: 30px;
     height: 30px;
     border-radius: 100%;
     cursor: pointer;
 }
-.principal .frame1 ul li .selecionado{
-    background: rgb(54, 119, 28);
+#ativo{
+    background: rgba(255, 253, 253, 0.4);
+    
 }
 .principal .frame1{
     
@@ -48,8 +50,20 @@ body{
     align-items: center;
     padding-top: 30px;
     background-size: cover;
-    transition: 1s;
+    transition: 0.8s;
 }
+
+/*1036 de largura pra bg responsivo*/
+@media screen and (max-width:1036px){
+    body .principal .frame1{
+    display:flex ;
+    background-position: center;
+
+    }
+
+}
+
+
 .frame1 h2,p{
     text-align: center;
     width: 100vw;

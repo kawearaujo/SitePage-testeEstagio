@@ -2,7 +2,7 @@
 var bg=1;
 
 function slide(n){
-    document.getElementById("portifolio").style= "background-image: url('/img/"+n+".jpg')"
+    document.getElementById("portifolio").style= "background-image: url('/img/"+n+".png')"
     botoes(n,3)
     bg=n
 }
@@ -10,7 +10,7 @@ function botoes(n,m){
     document.getElementById('botoes').innerHTML = "";
     for (a=1;a<=3;a++){
         if(a==n){
-            document.getElementById('botoes').innerHTML+="<li class='selecionado' onclick='slide("+a+")'></li>";
+            document.getElementById('botoes').innerHTML+="<li id='ativo' onclick='slide("+a+")'></li>";
         }else{
             document.getElementById('botoes').innerHTML+="<li onclick='slide("+a+")'></li>";
         }
