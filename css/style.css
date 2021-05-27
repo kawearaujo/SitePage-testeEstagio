@@ -17,8 +17,8 @@ body{
     margin-top: 10px;
     transition: 1s;
 }
-.principal .frame1 :active{
-    scroll-behavior:smooth;
+.principal .frame1 a:active{
+    scroll-behavior: smooth;
 }
 .principal .frame1 ul{
     list-style: none;

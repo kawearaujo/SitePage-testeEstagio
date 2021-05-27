@@ -1,5 +1,6 @@
-window.onload(slide(4));
+
 var bg=1;
+
 function slide(n){
     document.getElementById("portifolio").style= "background-image: url('/img/"+n+".jpg')"
     botoes(n,3)
@@ -16,10 +17,16 @@ function botoes(n,m){
     }
     
 }
-function scroller(ident){
-    document.querySelector(ident).scrollIntoViewOptions({behavior: "smooth"});
-}
-document.querySelector("#down").addEventListener("onclick",function(event){
+
+function scrolling(valor){
+    document.querySelector(valor).scrollIntoView({behavior: "smooth"});
+};
+document.querySelector('#down').addEventListener('click',function(event){
     event.preventDefault();
-    scroller("#pag2");
+    console.log("dale")
+    scrolling("#pag2");
 });
+function start(){
+    slide(1);
+}
+start()
