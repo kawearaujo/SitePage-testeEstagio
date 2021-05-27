@@ -5,9 +5,92 @@
     text-decoration: none;
 }
 body{
-    background-color:rgba(70, 64, 64,0.8);
+    background-color:rgb(65, 62, 62);
+    
+}
+.principal .frame1 img{
+    border-radius: 30%;
+    background:rgba(255,255,255,0.6);
+    padding: 10px 10px 10px 10px;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    transition: 1s;
+}
+.principal .frame1 :active{
+    scroll-behavior:smooth;
+}
+.principal .frame1 ul{
+    list-style: none;
+    width: 150px;
+    display: flex;
+    align-items:flex-end;
+    justify-content:space-evenly;
+    padding-top:60vh;
+}
+.principal .frame1 ul li{
+    background: rgb(194, 117, 45);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.principal .frame1 ul li .selecionado{
+    background: rgb(54, 119, 28);
+}
+.principal .frame1{
+    
+    /* background-color: rgb(110, 73, 17); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background-size: cover;
+    transition: 1s;
+}
+.frame1 h2,p{
+    text-align: center;
+    width: 100vw;
+    background:rgba(0,0,0,0.6);
+    padding: 15px 0px;
+    color:rgb(54, 119, 28);
 }
 
+
+.principal .frame2{
+
+    width: 100vw;
+    height: 50vh;
+}
+.principal .frame3{
+    background-color: rgb(87, 87, 87);
+    width: 100vw;
+    height: 50vh;
+}
+.principal .frame4{
+    width: 100vw;
+    height: 60vh;
+}
+.principal .frame5{
+    background-color: rgb(71, 71, 71);
+    width: 100vw;
+    height: 40vh;
+}
+.principal .rodape{
+    background-color: rgb(44, 44, 44);
+    width: 100vw;
+    height: 10vh;
+}
+.principal .rodape h1{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* 
 .cabecalho{
     display: flex;
     align-items: center;
@@ -24,9 +107,10 @@ header nav a{
     font-family: 'arial black', Times;
     font-size: 40px;
     font-weight: bold;
-    color: plum;
+    color: rgb(50, 156, 156);
 }
 nav a:hover{
+    border-radius: 5px;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -38,8 +122,8 @@ main .container{
     overflow:hidden;
 }
 
-main .container .imagebg {
+main .container img {
     width: 100%;
     height: 600px;
     background-size: cover;
-}
+}  */
