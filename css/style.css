@@ -12,11 +12,16 @@ body{
 }
 .principal .frame1 img{
     border-radius: 30%;
-    background:rgba(255,255,255,0.6);
+    background:rgba(255,255,255,0.5);
     padding: 10px 10px 10px 10px;
     width: 40px;
     height: 40px;
     margin-top: 10px;
+}
+.principal .frame1 img:hover{
+    border-radius: 100%;
+    background:rgba(255,255,255,0.8);
+    
 }
 .principal .frame1 a:active{
     scroll-behavior: smooth;
@@ -35,11 +40,14 @@ body{
     height: 30px;
     border-radius: 100%;
     cursor: pointer;
-}
-#ativo{
-    background: rgba(255, 253, 253, 0.4);
+    transition: 1s;
     
 }
+#ativo{
+
+    background: rgba(255, 253, 253, 0.4);
+}
+
 .principal .frame1{
     
     /* background-color: rgb(110, 73, 17); */
@@ -64,20 +72,39 @@ body{
 }
 
 
-.frame1 h2,p{
+.frame1 .nature{
     text-align: center;
     width: 100vw;
     background:rgba(0,0,0,0.6);
     padding: 15px 0px;
     color:rgb(54, 119, 28);
 }
-
+.frame2 h2,p{
+    text-align: center;
+    width: 20vw;
+    background:rgba(0,0,0,0.6);
+    padding: 15px 0px;
+    color:rgb(54, 119, 28);
+} 
 
 .principal .frame2{
-
     width: 100vw;
     height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow:hidden;
+    
 }
+.frame2 {width: 600px;position: relative;}
+.frame2 .nav{position: absolute;top: 0;display: table;background: cornflowerblue;color: black;}
+.frame2 .nav:hover{display: table-cell;vertical-align: middle;}
+.frame2 .nav.back{left:0;}
+.frame2 .nav.forth{right:0;}
+.frame2 ul li img{width: 50px;}
+.carrossel{list-style: none; width: 1000%;}
+.carrossel .item{float: left;width: 173px;padding:10px;margin-right: 10px;}
+
 .principal .frame3{
     background-color: rgb(87, 87, 87);
     width: 100vw;
