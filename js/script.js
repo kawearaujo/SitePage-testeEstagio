@@ -40,12 +40,35 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
+    
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+    // var content = this.nextElementSibling;
+    // if (content.style.display === "flex") {
+    //   content.style.display = "none";
+    // } else {
+    //   content.style.display = "flex";
+    // }
+    switch (this.innerHTML) {
+        case "Open Section 1":
+            coll[0].nextElementSibling.style.display="flex";
+            coll[1].nextElementSibling.style.display="none";
+            coll[2].nextElementSibling.style.display="none";
+            break;
+        case "Open Section 2":
+            coll[0].nextElementSibling.style.display="none";
+            coll[1].nextElementSibling.style.display="flex";
+            coll[2].nextElementSibling.style.display="none";
+            break;
+        case "Open Section 3":
+            coll[0].nextElementSibling.style.display="none";
+            coll[1].nextElementSibling.style.display="none";
+            coll[2].nextElementSibling.style.display="flex";
+            break;
+        default:
+            break;
     }
+    
+     
   });
 }
+

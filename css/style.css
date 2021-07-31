@@ -124,10 +124,24 @@ body{
 }
 .frame4{
     text-align: justify;
+    
     max-width: 100%;
-    height: 60vh;
+    height: 70vh;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 6vh;
+}
+
+.frame4 img{
+    border-radius: 10%;
+    height: 30vh;
+    padding-left: 5%;
+}
+
+.frame4 .rightbox{
+    align-items: center;
+    display: flex;
+    padding: 0px 10%;
 }
 .frame4 button{
     margin-top: 5px;
@@ -150,20 +164,7 @@ body{
     padding-top: 20px;
 }
 
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-  
-  .collapsible {
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -183,5 +184,5 @@ body{
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #616161;
   }
