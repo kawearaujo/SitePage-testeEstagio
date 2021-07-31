@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+
 }
 body{
     
@@ -88,26 +89,50 @@ body{
 }  */
 
 .frame2{
-    padding: 15px 0px;
+    /* padding: 15px 0px; */
     /* background:rgba(148, 31, 31, 0.5); */
-    width: 100%;
+    margin-left:25px;
+    width: 95%;
     height: 50vh;
-    align-items: center;
-    vertical-align: middle;
+    align-items:center;
     display: flex;
 }
-
-
+.frame2 .item{
+    background:rgba(0,0,0,0.6);
+    padding: 5px;
+    color:rgba(139, 252, 94, 0.6);
+}
+.frame2 p{
+    text-align:justify;
+    
+}
 
 .frame3{
     background-color: rgb(87, 87, 87);
     width: 100vw;
     height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.frame3 .leftbox img{
+    border-radius: 50%;
+}
+.frame3 .rightbox{
+    
+    padding: 20px;
 }
 .frame4{
-    width: 100vw;
+    text-align: justify;
+    max-width: 100%;
     height: 60vh;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+.frame4 button{
+    margin-top: 5px;
+}
+
 .frame5{
     background-color: rgb(71, 71, 71);
     width: 100vw;
@@ -125,3 +150,38 @@ body{
     padding-top: 20px;
 }
 
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
