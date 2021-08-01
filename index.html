@@ -82,7 +82,25 @@
         </div>
         </div>
         <div class="frame5">
-            
+            <form name="formcontato">
+
+                <h1>Entre em contato</h1>
+                <div class="nomeemail">
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <br/><input type="text" id="nomeid" placeholder="Nome" required="required" name="nome" />
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <br/><input type="email" id="emailid" placeholder="email@mail.com" name="email" />
+                    </div>
+                 </div>
+                
+                <br/><label for="email">Comentario:</label>
+                <br/><textarea placeholder="Deixe seu comentario"></textarea>
+              
+                <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+              </form>
         </div>
         <div class="rodape">
             <h1>by Kawe A. P. Rodrigues</h1>
@@ -93,6 +111,6 @@
     <script type ="text/javascript" src="js/jquery.min.js"></script>
     <script type ="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type ="text/javascript" src="js/setup.js"></script>
-    <!-- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+    
 </body>
 </html>
