@@ -1,5 +1,8 @@
-
+var largura = window.innerWidth;
+console.log(largura)
 var bg=1;
+
+
 
 function slide(n){
     document.getElementById("portifolio").style= "background-image: url('/img/"+n+".png')"
@@ -37,32 +40,35 @@ start()
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
+if (largura<680){
+    displayString="block"
+}else{
+    displayString="flex"
+}
+coll[0].nextElementSibling.style.display=displayString;
 
-coll[0].nextElementSibling.style.display="flex";
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    //this.classList.toggle("active");
     switch (this.innerHTML) {
         case "Open Section 1":
-            coll[0].nextElementSibling.style.display="flex";
+            coll[0].nextElementSibling.style.display=displayString;
             coll[1].nextElementSibling.style.display="none";
             coll[2].nextElementSibling.style.display="none";
             break;
         case "Open Section 2":
             coll[0].nextElementSibling.style.display="none";
-            coll[1].nextElementSibling.style.display="flex";
+            coll[1].nextElementSibling.style.display=displayString;
             coll[2].nextElementSibling.style.display="none";
             break;
         case "Open Section 3":
             coll[0].nextElementSibling.style.display="none";
             coll[1].nextElementSibling.style.display="none";
-            coll[2].nextElementSibling.style.display="flex";
+            coll[2].nextElementSibling.style.display=displayString;
             break;
         default:
             break;
     }
     
-     
   });
 }
 

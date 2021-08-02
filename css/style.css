@@ -4,11 +4,10 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-
+    
 }
 body{
     background-color:rgb(65, 62, 62);
-    
 }
 .frame1 img{
     border-radius: 30%;
@@ -49,9 +48,7 @@ body{
 }
 
 .frame1{
-    
-    /* background-color: rgb(110, 73, 17); */
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,90 +58,93 @@ body{
     transition: 0.8s;
 }
 
-/*1036 de largura pra bg responsivo*/
-@media screen and (max-width:1036px){
-    .frame1{
-    display:flex ;
-    background-position: center;
-
-    }
-
+.frame1 .tarja{
+    width: 100%;
 }
-
-
 .frame1 .nature{
-    text-align: center;
-    width: 100vw;
     background:rgba(0,0,0,0.6);
+    display: block;
+    text-align: center;
     padding: 15px 0px;
     color:rgb(54, 119, 28);
 }
-/* .frame2 h2,p{
-    text-align: center;
-    width: 20vw;
-    background:rgba(0,0,0,0.6);
-    padding: 15px 0px;
-    color:rgb(54, 119, 28);
-}  */
 
 .frame2{
-    /* padding: 15px 0px; */
-    /* background:rgba(148, 31, 31, 0.5); */
     background-color: rgba(0, 0, 0, 0.7);
-    padding:0px 5%;
+    padding:5% 5%;
     width: 100%;
-    height: 50vh;
+    min-height: max-content+10px;
     align-items:center;
     display: flex;
 }
 .frame2 .item{
     background:rgba(0,0,0,0.6);
+    background-size: cover;
     padding: 5px;
     color:rgba(139, 252, 94, 0.6);
 }
-.frame2 p{
-    text-align:justify;
-    
-}
 
 .frame3{
-    /* background-color: rgb(87, 87, 87); */
     color:rgba(139, 252, 94, 0.6);
     background: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 50vh;
+    max-width: 100vw;
+    height: max-content;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    vertical-align: middle;
     padding: 0px 20px;
+    
+}
+.frame3 .leftbox{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .frame3 .leftbox img{
     border-radius: 50%;
 }
+
 .frame3 .rightbox{
-    
-    padding: 20px;
+    margin-left:auto ;
+    margin-right:auto ;
+    text-align: center;
+    padding: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .frame4{
-    text-align: justify;
     background: rgba(0, 0, 0, 0.5);
     max-width: 100%;
-    height: 70vh;
+    height: max-content;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 6vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
 }
 
 .frame4 img{
-    border-radius: 10%;
-    height: 30vh;
-    padding-left: 5%;
+    
+    border-start-end-radius: 10%;
+    max-height: 30vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
-
+.frame4 .leftbox{
+    align-items: center;
+    padding: 3% 0px;
+    display: flex;
+    
+}
 .frame4 .rightbox{
     align-items: center;
+    min-width: 312px;
     display: flex;
-    padding: 0px 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 0px;
 }
 .frame4 button{
     margin-top: 5px;
@@ -152,12 +152,19 @@ body{
 
 .frame5{
     background: rgba(0, 0, 0, 0.7);
-    width: 100vw;
-    height: 60vh;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    min-height: max-content;
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    padding:3% 0px;
 }
+
 .rodape{
     background-color: rgb(44, 44, 44);
-    width: 100vw;
+    width: 100%;
     height: 10vh;
 }
 .rodape h1{
@@ -190,19 +197,9 @@ body{
     background-color: rgba(95, 95, 95, 0.466);
   }
 
-
-.frame5{
-    display: table-cell;
-    vertical-align: middle;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
 form {
     font-family: Verdana,Tahoma,sans-serif;
     font-size: 15px;
-    /* background-color: #CC3300; */
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -249,8 +246,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     color: black;
 }
 
-
-
 textarea {
     width: 420px;
     height: 120px;
@@ -262,4 +257,43 @@ form label {
     margin-left: 20px;
     color: #FFFFFF;
     font-weight: bold;
+}
+
+
+/* Responsidividade */
+
+
+@media screen and (max-width:1036px){
+    .frame1{
+    display:flex ;
+    background-position: center;
+    background-size: cover;
+    min-width: 100vw;
+    /* min-height: 100vh; */
+    }
+
+    .frame3{
+        display: block;
+        max-height:100vh;
+    }
+}
+
+@media screen and (max-width:680px){
+    .frame4 .rightbox{
+        
+        min-width: 200px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3% 0px;
+    }
+}
+
+@media screen and (max-width:460px){
+    .frame5 .nomeemail{
+        display: block;
+    }
+    .frame5 textarea{
+        max-width: min-content;
+    }
 }
