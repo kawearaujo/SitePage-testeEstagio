@@ -102,6 +102,7 @@ body{
 }
 .frame3 .leftbox img{
     border-radius: 50%;
+    max-width:100%;
 }
 
 .frame3 .rightbox{
