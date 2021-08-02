@@ -144,7 +144,7 @@ body{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding: 3% 0px;
+    padding: 3% 3%;
 }
 .frame4 button{
     margin-top: 5px;
@@ -280,7 +280,6 @@ form label {
 
 @media screen and (max-width:680px){
     .frame4 .rightbox{
-        
         min-width: 200px;
         display: flex;
         margin-left: auto;
