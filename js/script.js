@@ -21,6 +21,7 @@ function botoes(n,m){
     
 }
 
+
 function scrolling(valor){
     document.querySelector(valor).scrollIntoView({behavior: "smooth"});
 };
@@ -31,7 +32,15 @@ document.querySelector('#down').addEventListener('click',function(event){
     scrolling("#pag2");
 });
 
+function Enviar() {
 
+    var nome = document.getElementById("nomeid");
+
+    if (nome.value != "") {
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }
+
+}
 
 function start(){
     slide(1);
